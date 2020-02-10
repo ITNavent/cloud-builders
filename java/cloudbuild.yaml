@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/cloud-build-java:java-11', '.']
+
+images: ['gcr.io/$PROJECT_ID/cloud-build-java:java-11']
+tags: ['cloud-builders-community']
