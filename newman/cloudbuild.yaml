@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/newman:latest', '--build-arg','NEWMAN_VERSION=4.5.5', '.']
+
+images: ['gcr.io/$PROJECT_ID/newman:latest']
+tags: ['cloud-builders-community']
