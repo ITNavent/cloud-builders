@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/git:latest', '--tag=gcr.io/$PROJECT_ID/git:${_VERSION}', '.']
+
+images:
+    - 'gcr.io/$PROJECT_ID/git:${_VERSION}'
+    - 'gcr.io/$PROJECT_ID/git:latest'
+tags: ['cloud-builders-community']
