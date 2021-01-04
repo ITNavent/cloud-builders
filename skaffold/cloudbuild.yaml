@@ -1,8 +1,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=gcr.io/$PROJECT_ID/skaffold:1.10.1', '--tag=gcr.io/$PROJECT_ID/skaffold:latest', '.']
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/skaffold:16.0-helm-2.17-2', '--tag=gcr.io/$PROJECT_ID/skaffold:latest', '.']
 
 images:
-    - 'gcr.io/$PROJECT_ID/skaffold:1.10.1'
+    - 'gcr.io/$PROJECT_ID/skaffold:16.0-helm-2.17-2'
     - 'gcr.io/$PROJECT_ID/skaffold:latest'
 tags: ['cloud-builders-community']

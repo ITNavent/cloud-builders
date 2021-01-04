@@ -1,6 +1,6 @@
 FROM gcr.io/finprop-infra-a54a4f7d/cloud-build-java:java-11
 
-ARG HELM_VERSION=v2.16.1
+ARG HELM_VERSION=v2.17.0
 ENV HELM_VERSION=$HELM_VERSION
 
 COPY helm.bash /builder/helm.bash
